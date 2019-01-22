@@ -29,6 +29,8 @@
 class ComponentLaserObstacleAvoidPortFactoryInterface;
 class ComponentLaserObstacleAvoidExtension;
 
+// includes for SeRoNetSDKComponentGeneratorExtension
+
 // includes for PlainOpcUaComponentLaserObstacleAvoidExtension
 // include plain OPC UA device clients
 // include plain OPC UA status servers
@@ -106,6 +108,8 @@ public:
 	// define answer-ports
 	
 	// define request-handlers
+	
+	// definitions of SeRoNetSDKComponentGeneratorExtension
 	
 	// definitions of PlainOpcUaComponentLaserObstacleAvoidExtension
 	
@@ -222,6 +226,8 @@ public:
 			long interval;
 			std::string roboticMiddleware;
 		} navigationVelocityServiceOut;
+		
+		// -- parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// -- parameters for PlainOpcUaComponentLaserObstacleAvoidExtension
 		

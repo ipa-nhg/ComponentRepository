@@ -29,6 +29,8 @@
 class SmartCdlServerPortFactoryInterface;
 class SmartCdlServerExtension;
 
+// includes for SeRoNetSDKComponentGeneratorExtension
+
 // includes for PlainOpcUaSmartCdlServerExtension
 // include plain OPC UA device clients
 // include plain OPC UA status servers
@@ -173,6 +175,8 @@ public:
 	// define answer-ports
 	
 	// define request-handlers
+	
+	// definitions of SeRoNetSDKComponentGeneratorExtension
 	
 	// definitions of PlainOpcUaSmartCdlServerExtension
 	
@@ -357,6 +361,8 @@ public:
 			long interval;
 			std::string roboticMiddleware;
 		} trackingClient;
+		
+		// -- parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// -- parameters for PlainOpcUaSmartCdlServerExtension
 		

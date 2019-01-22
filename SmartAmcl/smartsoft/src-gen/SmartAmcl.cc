@@ -76,6 +76,8 @@ SmartAmcl::SmartAmcl()
 	connections.amclTask.priority = -1;
 	connections.amclTask.cpuAffinity = -1;
 	
+	// initialize members of SeRoNetSDKComponentGeneratorExtension
+	
 	// initialize members of PlainOpcUaSmartAmclExtension
 	
 }
@@ -194,6 +196,8 @@ void SmartAmcl::init(int argc, char *argv[])
 		
 		// print out the actual parameters which are used to initialize the component
 		std::cout << " \nComponentDefinition Initial-Parameters:\n" << COMP->getGlobalState() << std::endl;
+		
+		// initializations of SeRoNetSDKComponentGeneratorExtension
 		
 		// initializations of PlainOpcUaSmartAmclExtension
 		
@@ -410,6 +414,8 @@ void SmartAmcl::fini()
 		portFactory->second->destroy();
 	}
 	
+	// destruction of SeRoNetSDKComponentGeneratorExtension
+	
 	// destruction of PlainOpcUaSmartAmclExtension
 	
 }
@@ -526,6 +532,8 @@ void SmartAmcl::loadParameter(int argc, char *argv[])
 		if(parameter.checkIfParameterExists("AmclTask", "cpuAffinity")) {
 			parameter.getInteger("AmclTask", "cpuAffinity", connections.amclTask.cpuAffinity);
 		}
+		
+		// load parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// load parameters for PlainOpcUaSmartAmclExtension
 		

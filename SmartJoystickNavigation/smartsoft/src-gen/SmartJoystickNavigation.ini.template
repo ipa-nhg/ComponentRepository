@@ -64,7 +64,7 @@ serverName unknown
 serviceName unknown
 wiringName JoystickServiceIn
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [NavVelServiceOut]
 initialConnect false
@@ -72,10 +72,14 @@ serverName unknown
 serviceName unknown
 wiringName NavVelServiceOut
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
+
+##########################
+## parameters of SeRoNetSDKComponentGeneratorExtension
 
 ##########################
 ## parameters of PlainOpcUaSmartJoystickNavigationExtension
+
 
 
 #####################

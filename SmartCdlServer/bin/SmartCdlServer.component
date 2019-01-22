@@ -14,14 +14,38 @@ ComponentDefinition SmartCdlServer
 		//SkillRealizationsRef cdlSkills;
 	}
 	
-	InputPort LaserClient implements CommBasicObjects.LaserService { }
-	InputPort LaserClient2 implements CommBasicObjects.LaserService { }
-	InputPort PlannerClient implements CommNavigationObjects.PlannerGoalService { }
-	InputPort NavVelSendServer implements CommNavigationObjects.NavigationVelocityService { }
-	InputPort TrackingClient implements CommTrackingObjects.TrackingService { }
-	InputPort IRClient implements CommNavigationObjects.IRService { }
-	InputPort PathNavigationGoalClient implements CommRobotinoObjects.PathNavigationGoalService { }
-	InputPort BaseStateClient implements CommBasicObjects.BaseStateService { }
+	InputPort LaserClient implements CommBasicObjects.LaserService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	InputPort LaserClient2 implements CommBasicObjects.LaserService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	InputPort PlannerClient implements CommNavigationObjects.PlannerGoalService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	InputPort NavVelSendServer implements CommNavigationObjects.NavigationVelocityService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	InputPort TrackingClient implements CommTrackingObjects.TrackingService {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	InputPort IRClient implements CommNavigationObjects.IRService {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	InputPort PathNavigationGoalClient implements CommRobotinoObjects.PathNavigationGoalService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	InputPort BaseStateClient implements CommBasicObjects.BaseStateService {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
 	
 	Activity CdlTask {
 		InputPortLink LaserClient {
@@ -47,9 +71,17 @@ ComponentDefinition SmartCdlServer
 	}
 	
 	OutputPort NavVelSendClient implements CommNavigationObjects.NavigationVelocityService realizedBy CdlTask { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
 	}
-	OutputPort GoalEventServer implements CommNavigationObjects.GoalEventService realizedBy CdlTask { }
-	OutputPort RobotBlockedEventServer implements CommNavigationObjects.RobotBlockedEventService realizedBy CdlTask { } 
+	OutputPort GoalEventServer implements CommNavigationObjects.GoalEventService realizedBy CdlTask { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	OutputPort RobotBlockedEventServer implements CommNavigationObjects.RobotBlockedEventService realizedBy CdlTask { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	} 
 	
 	ComponentParameters SmartCdlServerParams slave CoordinationPort;
 }

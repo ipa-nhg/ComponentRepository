@@ -57,19 +57,19 @@ SmartPlannerBreadthFirstSearch::SmartPlannerBreadthFirstSearch()
 	connections.component.useLogger = false;
 	
 	connections.plannerEventServer.serviceName = "PlannerEventServer";
-	connections.plannerEventServer.roboticMiddleware = "ACE_SmartSoft";
+	connections.plannerEventServer.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.plannerGoalServer.serviceName = "PlannerGoalServer";
-	connections.plannerGoalServer.roboticMiddleware = "ACE_SmartSoft";
+	connections.plannerGoalServer.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.baseStateClient.wiringName = "BaseStateClient";
 	connections.baseStateClient.serverName = "unknown";
 	connections.baseStateClient.serviceName = "unknown";
 	connections.baseStateClient.interval = 1;
-	connections.baseStateClient.roboticMiddleware = "ACE_SmartSoft";
+	connections.baseStateClient.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.curMapClient.wiringName = "CurMapClient";
 	connections.curMapClient.serverName = "unknown";
 	connections.curMapClient.serviceName = "unknown";
 	connections.curMapClient.interval = 1;
-	connections.curMapClient.roboticMiddleware = "ACE_SmartSoft";
+	connections.curMapClient.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.plannerTask.minActFreq = 2.0;
 	connections.plannerTask.maxActFreq = 10.0;
 	connections.plannerTask.trigger = "PeriodicTimer";
@@ -78,6 +78,8 @@ SmartPlannerBreadthFirstSearch::SmartPlannerBreadthFirstSearch()
 	connections.plannerTask.scheduler = "DEFAULT";
 	connections.plannerTask.priority = -1;
 	connections.plannerTask.cpuAffinity = -1;
+	
+	// initialize members of SeRoNetSDKComponentGeneratorExtension
 	
 	// initialize members of PlainOpcUaSmartPlannerBreadthFirstSearchExtension
 	
@@ -196,6 +198,8 @@ void SmartPlannerBreadthFirstSearch::init(int argc, char *argv[])
 		
 		// print out the actual parameters which are used to initialize the component
 		std::cout << " \nComponentDefinition Initial-Parameters:\n" << COMP->getGlobalState() << std::endl;
+		
+		// initializations of SeRoNetSDKComponentGeneratorExtension
 		
 		// initializations of PlainOpcUaSmartPlannerBreadthFirstSearchExtension
 		
@@ -424,6 +428,8 @@ void SmartPlannerBreadthFirstSearch::fini()
 		portFactory->second->destroy();
 	}
 	
+	// destruction of SeRoNetSDKComponentGeneratorExtension
+	
 	// destruction of PlainOpcUaSmartPlannerBreadthFirstSearchExtension
 	
 }
@@ -545,6 +551,8 @@ void SmartPlannerBreadthFirstSearch::loadParameter(int argc, char *argv[])
 		if(parameter.checkIfParameterExists("PlannerTask", "cpuAffinity")) {
 			parameter.getInteger("PlannerTask", "cpuAffinity", connections.plannerTask.cpuAffinity);
 		}
+		
+		// load parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// load parameters for PlainOpcUaSmartPlannerBreadthFirstSearchExtension
 		

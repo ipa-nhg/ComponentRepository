@@ -59,16 +59,16 @@ SmartMapperGridMap::SmartMapperGridMap()
 	connections.component.useLogger = false;
 	
 	connections.currMapOut.serviceName = "CurrMapOut";
-	connections.currMapOut.roboticMiddleware = "ACE_SmartSoft";
+	connections.currMapOut.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.currQueryServer.serviceName = "CurrQueryServer";
-	connections.currQueryServer.roboticMiddleware = "ACE_SmartSoft";
+	connections.currQueryServer.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.ltmQueryServer.serviceName = "LtmQueryServer";
-	connections.ltmQueryServer.roboticMiddleware = "ACE_SmartSoft";
+	connections.ltmQueryServer.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.laserServiceIn.wiringName = "LaserServiceIn";
 	connections.laserServiceIn.serverName = "unknown";
 	connections.laserServiceIn.serviceName = "unknown";
 	connections.laserServiceIn.interval = 1;
-	connections.laserServiceIn.roboticMiddleware = "ACE_SmartSoft";
+	connections.laserServiceIn.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.curMapTask.minActFreq = 10.0;
 	connections.curMapTask.maxActFreq = 20.0;
 	// scheduling default parameters
@@ -83,6 +83,8 @@ SmartMapperGridMap::SmartMapperGridMap()
 	connections.ltmMapTask.scheduler = "DEFAULT";
 	connections.ltmMapTask.priority = -1;
 	connections.ltmMapTask.cpuAffinity = -1;
+	
+	// initialize members of SeRoNetSDKComponentGeneratorExtension
 	
 	// initialize members of PlainOpcUaSmartMapperGridMapExtension
 	
@@ -198,6 +200,8 @@ void SmartMapperGridMap::init(int argc, char *argv[])
 		
 		// print out the actual parameters which are used to initialize the component
 		std::cout << " \nComponentDefinition Initial-Parameters:\n" << COMP->getGlobalState() << std::endl;
+		
+		// initializations of SeRoNetSDKComponentGeneratorExtension
 		
 		// initializations of PlainOpcUaSmartMapperGridMapExtension
 		
@@ -460,6 +464,8 @@ void SmartMapperGridMap::fini()
 		portFactory->second->destroy();
 	}
 	
+	// destruction of SeRoNetSDKComponentGeneratorExtension
+	
 	// destruction of PlainOpcUaSmartMapperGridMapExtension
 	
 }
@@ -597,6 +603,8 @@ void SmartMapperGridMap::loadParameter(int argc, char *argv[])
 		if(parameter.checkIfParameterExists("LtmMapTask", "cpuAffinity")) {
 			parameter.getInteger("LtmMapTask", "cpuAffinity", connections.ltmMapTask.cpuAffinity);
 		}
+		
+		// load parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// load parameters for PlainOpcUaSmartMapperGridMapExtension
 		

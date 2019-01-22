@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ComponentDefinition="http://www.ecore.org/component/ComponentDefinition" xmlns:ComponentParameter="http://www.ecore.org/component/ComponentParameter" xmlns:CoordinationExtension="http://www.ecore.org/component/CoordinationExtension" xmlns:PerformanceExtension="http://www.ecore.org/component/PerformanceExtension" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ComponentDefinition="http://www.ecore.org/component/ComponentDefinition" xmlns:ComponentParameter="http://www.ecore.org/component/ComponentParameter" xmlns:CoordinationExtension="http://www.ecore.org/component/CoordinationExtension" xmlns:PerformanceExtension="http://www.ecore.org/component/PerformanceExtension" xmlns:SeronetExtension="http://www.ecore.org/component/SeronetExtension" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis xmi:id="_T4c1MLl2EeexIcw9OXs-2Q" selectedViews="_T8N64Ll2EeexIcw9OXs-2Q" version="12.1.0.201708031200">
     <semanticResources>model/SmartJoystickServer.component</semanticResources>
     <semanticResources>model/SmartJoystickServer.componentParameters</semanticResources>
@@ -76,8 +76,19 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="__fqvRItMEeiwN8sGfb9BPQ" fontName="Ubuntu"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="__fqvRYtMEeiwN8sGfb9BPQ"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_U7RwQB5NEem29OmZKrjKJQ" type="3012" element="_U5xUYB5NEem29OmZKrjKJQ">
+              <children xmi:type="notation:Node" xmi:id="_U7ZsEB5NEem29OmZKrjKJQ" visible="false" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_U7ZsER5NEem29OmZKrjKJQ" x="21" y="1"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_U7gZwB5NEem29OmZKrjKJQ" type="3005" element="_U6QckB5NEem29OmZKrjKJQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_U7gZwR5NEem29OmZKrjKJQ" fontName="Ubuntu"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U7gZwh5NEem29OmZKrjKJQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_U7RwQR5NEem29OmZKrjKJQ" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U7RwQh5NEem29OmZKrjKJQ" x="10" y="-14" width="20" height="22"/>
+            </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="__fnr9YtMEeiwN8sGfb9BPQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__fnr9otMEeiwN8sGfb9BPQ" x="347" y="77" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__fnr9otMEeiwN8sGfb9BPQ" x="245" y="70" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="__foTAItMEeiwN8sGfb9BPQ" type="3012" element="__e5TMItMEeiwN8sGfb9BPQ">
             <children xmi:type="notation:Node" xmi:id="__foTA4tMEeiwN8sGfb9BPQ" type="5010">
@@ -96,17 +107,17 @@
         <styles xmi:type="notation:DiagramStyle" xmi:id="_T_eDMrl2EeexIcw9OXs-2Q"/>
         <edges xmi:type="notation:Edge" xmi:id="__frWUItMEeiwN8sGfb9BPQ" type="4001" element="__feiAItMEeiwN8sGfb9BPQ" source="__fo6EItMEeiwN8sGfb9BPQ" target="__fnr9ItMEeiwN8sGfb9BPQ">
           <children xmi:type="notation:Node" xmi:id="__frWVItMEeiwN8sGfb9BPQ" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__frWVYtMEeiwN8sGfb9BPQ" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__frWVYtMEeiwN8sGfb9BPQ" x="-1" y="9"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="__frWVotMEeiwN8sGfb9BPQ" type="6002">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="__frWV4tMEeiwN8sGfb9BPQ" x="-2" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="__frWWItMEeiwN8sGfb9BPQ" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__frWWYtMEeiwN8sGfb9BPQ" x="1" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__frWWYtMEeiwN8sGfb9BPQ" y="-11"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="__frWUYtMEeiwN8sGfb9BPQ"/>
           <styles xmi:type="notation:FontStyle" xmi:id="__frWUotMEeiwN8sGfb9BPQ" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__frWU4tMEeiwN8sGfb9BPQ" points="[86, 0, -94, 0]$[165, 0, -15, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__frWU4tMEeiwN8sGfb9BPQ" points="[74, 1, -64, -2]$[123, 2, -15, -1]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__fr9YItMEeiwN8sGfb9BPQ" id="(0.5,0.4793814432989691)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__fr9YYtMEeiwN8sGfb9BPQ" id="(0.5,0.5)"/>
         </edges>
@@ -150,13 +161,25 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="__e4sIItMEeiwN8sGfb9BPQ" name="JoystickServcieOut" tooltipText="OutputPort" incomingEdges="__feiAItMEeiwN8sGfb9BPQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentDefinition:OutputPort" href="model/SmartJoystickServer.component#//@component/@elements.2"/>
         <semanticElements xmi:type="ComponentDefinition:OutputPort" href="model/SmartJoystickServer.component#//@component/@elements.2"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_U5xUYB5NEem29OmZKrjKJQ" name="OpcUa_SeRoNet" tooltipText="SeRoNet Port" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="SeronetExtension:SupportedMiddleware" href="model/SmartJoystickServer.component#//@component/@elements.2/@extensions.0"/>
+          <semanticElements xmi:type="SeronetExtension:SupportedMiddleware" href="model/SmartJoystickServer.component#//@component/@elements.2/@extensions.0"/>
+          <graphicalFilters xmi:type="diagram:HideLabelFilter" xmi:id="_U6XxUB5NEem29OmZKrjKJQ"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_U6QckB5NEem29OmZKrjKJQ" showIcon="false" hideLabelByDefault="true" workspacePath="/org.sirius.component.design/icons/SeRoNetIcon.png">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']/@borderedNodeMappings[name='OutputMiddlweareExtension']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']/@borderedNodeMappings[name='OutputMiddlweareExtension']"/>
+        </ownedBorderedNodes>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" xmi:id="__e4sIYtMEeiwN8sGfb9BPQ" showIcon="false" id="output">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='OutputPortNode']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='OutputPortNode']"/>
+        <actualMapping xmi:type="description_1:NodeMappingImport" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="__e5TMItMEeiwN8sGfb9BPQ" name="CoordinationPort" tooltipText="CoordinationSlavePort" outgoingEdges="__fiMYItMEeiwN8sGfb9BPQ" incomingEdges="__fjagItMEeiwN8sGfb9BPQ" width="-1" height="-1" resizeKind="NSEW">
         <target xmi:type="CoordinationExtension:CoordinationSlavePort" href="model/SmartJoystickServer.component#//@component/@elements.0"/>
@@ -176,7 +199,7 @@
         <labelFormat>bold</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']"/>
+      <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']"/>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="__e56QItMEeiwN8sGfb9BPQ" name="JoystickTask" tooltipText="Activity" outgoingEdges="__feiAItMEeiwN8sGfb9BPQ">
         <target xmi:type="ComponentDefinition:Activity" href="model/SmartJoystickServer.component#//@component/@elements.1"/>
         <semanticElements xmi:type="ComponentDefinition:Activity" href="model/SmartJoystickServer.component#//@component/@elements.1"/>
@@ -252,6 +275,7 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_T-a6Vrl2EeexIcw9OXs-2Q"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNetLayer']"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']"/>
     <target xmi:type="ComponentDefinition:ComponentDefModel" href="model/SmartJoystickServer.component#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

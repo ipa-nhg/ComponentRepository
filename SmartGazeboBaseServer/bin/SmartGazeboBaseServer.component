@@ -1,24 +1,34 @@
-ComponentDefinition SmartGazeboBaseServer {
+ComponentDefinition SmartGazeboBaseServer
+{
 	CoordinationSlavePort CoordinationPort implements CommBasicObjects.BaseCoordinationService {
-		
+		with baseState realizedBy BaseSatateQueryAnsw
 	}
-	
+
 	// Inputs and Responders
-	InputPort NavVelServiceIn implements CommNavigationObjects.NavigationVelocityService { }
-	InputPort LocalizationUpdateServiceIn implements CommNavigationObjects.LocalizationUpdateService { }
-	AnswerPort BaseSatateQueryAnsw implements CommBasicObjects.BaseStateQueryService { }
-	
+	InputPort NavVelServiceIn implements CommNavigationObjects.NavigationVelocityService {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	InputPort LocalizationUpdateServiceIn implements CommNavigationObjects.LocalizationUpdateService {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	AnswerPort BaseSatateQueryAnsw implements CommBasicObjects.BaseStateQueryService {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+
 	InputHandler LocalizationUpdateHandler triggeredFrom LocalizationUpdateServiceIn { }
 
 	RequestHandler BaseStateQueryHandler triggeredFrom BaseSatateQueryAnsw {
-		Observe BaseStateTask 
+		Observe BaseStateTask
 	}
 	InputHandler VelocityInpuHandler triggeredFrom NavVelServiceIn {  }
-	
+
 	Activity LaserTask
 	{
 		ActivationConstraints {
-			configurable=false
+			configurable = false
 			minActFreq = 10.0 Hz
 		}
 	}
@@ -33,11 +43,17 @@ ComponentDefinition SmartGazeboBaseServer {
 		DefaultTrigger PeriodicTimer 20.0 Hz;
 	}
 
-	OutputPort LaserServiceOut implements CommBasicObjects.LaserService realizedBy LaserTask { }
-	OutputPort BaseStateServiceOut implements CommBasicObjects.BaseStateService realizedBy BaseStateTask { } 
-	
+	OutputPort LaserServiceOut implements CommBasicObjects.LaserService realizedBy LaserTask {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	OutputPort BaseStateServiceOut implements CommBasicObjects.BaseStateService realizedBy BaseStateTask {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+
 	ComponentParameters SmartGazeboBaseServerParams slave CoordinationPort;
-Activity PollForGazeboConnection
+	Activity PollForGazeboConnection
 	{
 	}
 }

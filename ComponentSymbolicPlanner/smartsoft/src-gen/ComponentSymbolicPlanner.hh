@@ -29,6 +29,8 @@
 class ComponentSymbolicPlannerPortFactoryInterface;
 class ComponentSymbolicPlannerExtension;
 
+// includes for SeRoNetSDKComponentGeneratorExtension
+
 // includes for PlainOpcUaComponentSymbolicPlannerExtension
 // include plain OPC UA device clients
 // include plain OPC UA status servers
@@ -101,6 +103,8 @@ public:
 	
 	// define request-handlers
 	SymbolicPannerQueryHandler *symbolicPannerQueryHandler;
+	
+	// definitions of SeRoNetSDKComponentGeneratorExtension
 	
 	// definitions of PlainOpcUaComponentSymbolicPlannerExtension
 	
@@ -188,6 +192,8 @@ public:
 		} symbolicPlannerQueryServer;
 	
 		//--- client port parameter ---
+		
+		// -- parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// -- parameters for PlainOpcUaComponentSymbolicPlannerExtension
 		

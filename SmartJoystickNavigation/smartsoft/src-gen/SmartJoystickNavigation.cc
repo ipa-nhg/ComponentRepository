@@ -54,13 +54,13 @@ SmartJoystickNavigation::SmartJoystickNavigation()
 	connections.joystickServiceIn.serverName = "unknown";
 	connections.joystickServiceIn.serviceName = "unknown";
 	connections.joystickServiceIn.interval = 1;
-	connections.joystickServiceIn.roboticMiddleware = "ACE_SmartSoft";
+	connections.joystickServiceIn.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.navVelServiceOut.initialConnect = false;
 	connections.navVelServiceOut.wiringName = "NavVelServiceOut";
 	connections.navVelServiceOut.serverName = "unknown";
 	connections.navVelServiceOut.serviceName = "unknown";
 	connections.navVelServiceOut.interval = 1;
-	connections.navVelServiceOut.roboticMiddleware = "ACE_SmartSoft";
+	connections.navVelServiceOut.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.joystickNavTask.minActFreq = 0.0;
 	connections.joystickNavTask.maxActFreq = 0.0;
 	connections.joystickNavTask.trigger = "DataTriggered";
@@ -70,6 +70,8 @@ SmartJoystickNavigation::SmartJoystickNavigation()
 	connections.joystickNavTask.scheduler = "DEFAULT";
 	connections.joystickNavTask.priority = -1;
 	connections.joystickNavTask.cpuAffinity = -1;
+	
+	// initialize members of SeRoNetSDKComponentGeneratorExtension
 	
 	// initialize members of PlainOpcUaSmartJoystickNavigationExtension
 	
@@ -189,6 +191,8 @@ void SmartJoystickNavigation::init(int argc, char *argv[])
 		
 		// print out the actual parameters which are used to initialize the component
 		std::cout << " \nComponentDefinition Initial-Parameters:\n" << COMP->getGlobalState() << std::endl;
+		
+		// initializations of SeRoNetSDKComponentGeneratorExtension
 		
 		// initializations of PlainOpcUaSmartJoystickNavigationExtension
 		
@@ -400,6 +404,8 @@ void SmartJoystickNavigation::fini()
 		portFactory->second->destroy();
 	}
 	
+	// destruction of SeRoNetSDKComponentGeneratorExtension
+	
 	// destruction of PlainOpcUaSmartJoystickNavigationExtension
 	
 }
@@ -511,6 +517,8 @@ void SmartJoystickNavigation::loadParameter(int argc, char *argv[])
 		if(parameter.checkIfParameterExists("JoystickNavTask", "cpuAffinity")) {
 			parameter.getInteger("JoystickNavTask", "cpuAffinity", connections.joystickNavTask.cpuAffinity);
 		}
+		
+		// load parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// load parameters for PlainOpcUaSmartJoystickNavigationExtension
 		

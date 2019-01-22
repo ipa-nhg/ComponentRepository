@@ -13,9 +13,18 @@ ComponentDefinition SmartMapperGridMap {
 		}
 	}
 
-	InputPort LaserServiceIn implements CommBasicObjects.LaserService { }
-	AnswerPort CurrQueryServer implements CommNavigationObjects.CurrGridMapQueryService { }
-	AnswerPort LtmQueryServer implements CommNavigationObjects.LongTermGridMapQueryService { }
+	InputPort LaserServiceIn implements CommBasicObjects.LaserService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	AnswerPort CurrQueryServer implements CommNavigationObjects.CurrGridMapQueryService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	AnswerPort LtmQueryServer implements CommNavigationObjects.LongTermGridMapQueryService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
 	
 	Activity CurMapTask {
 		InputPortLink LaserServiceIn { 
@@ -37,7 +46,10 @@ ComponentDefinition SmartMapperGridMap {
 		OperationModeBinding CoordinationPort.ltmMap;
 	}
 	
-	OutputPort CurrMapOut implements CommNavigationObjects.CurrGridMapPushService realizedBy CurMapTask { } 
+	OutputPort CurrMapOut implements CommNavigationObjects.CurrGridMapPushService realizedBy CurMapTask {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	} 
 	RequestHandler CurrQueryServerHandler triggeredFrom CurrQueryServer { Observe CurMapTask } 
 	RequestHandler LtmQueryServerHandler triggeredFrom LtmQueryServer { Observe LtmMapTask }
 	

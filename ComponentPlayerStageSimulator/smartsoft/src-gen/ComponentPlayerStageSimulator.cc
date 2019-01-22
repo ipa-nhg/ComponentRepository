@@ -91,6 +91,8 @@ ComponentPlayerStageSimulator::ComponentPlayerStageSimulator()
 	connections.localizationUpdateHandler.prescale = 1;
 	connections.navigationVelocityHandler.prescale = 1;
 	
+	// initialize members of SeRoNetSDKComponentGeneratorExtension
+	
 	// initialize members of PlainOpcUaComponentPlayerStageSimulatorExtension
 	
 }
@@ -190,6 +192,8 @@ void ComponentPlayerStageSimulator::init(int argc, char *argv[])
 		
 		// print out the actual parameters which are used to initialize the component
 		std::cout << " \nComponentDefinition Initial-Parameters:\n" << COMP->getGlobalState() << std::endl;
+		
+		// initializations of SeRoNetSDKComponentGeneratorExtension
 		
 		// initializations of PlainOpcUaComponentPlayerStageSimulatorExtension
 		
@@ -433,6 +437,8 @@ void ComponentPlayerStageSimulator::fini()
 		portFactory->second->destroy();
 	}
 	
+	// destruction of SeRoNetSDKComponentGeneratorExtension
+	
 	// destruction of PlainOpcUaComponentPlayerStageSimulatorExtension
 	
 }
@@ -583,6 +589,8 @@ void ComponentPlayerStageSimulator::loadParameter(int argc, char *argv[])
 		if(parameter.checkIfParameterExists("NavigationVelocityHandler", "prescale")) {
 			parameter.getInteger("NavigationVelocityHandler", "prescale", connections.navigationVelocityHandler.prescale);
 		}
+		
+		// load parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// load parameters for PlainOpcUaComponentPlayerStageSimulatorExtension
 		

@@ -64,15 +64,15 @@ SmartGazeboBaseServer::SmartGazeboBaseServer()
 	connections.component.useLogger = false;
 	
 	connections.baseSatateQueryAnsw.serviceName = "BaseSatateQueryAnsw";
-	connections.baseSatateQueryAnsw.roboticMiddleware = "ACE_SmartSoft";
+	connections.baseSatateQueryAnsw.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.baseStateServiceOut.serviceName = "BaseStateServiceOut";
-	connections.baseStateServiceOut.roboticMiddleware = "ACE_SmartSoft";
+	connections.baseStateServiceOut.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.laserServiceOut.serviceName = "LaserServiceOut";
-	connections.laserServiceOut.roboticMiddleware = "ACE_SmartSoft";
+	connections.laserServiceOut.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.localizationUpdateServiceIn.serviceName = "LocalizationUpdateServiceIn";
-	connections.localizationUpdateServiceIn.roboticMiddleware = "ACE_SmartSoft";
+	connections.localizationUpdateServiceIn.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.navVelServiceIn.serviceName = "NavVelServiceIn";
-	connections.navVelServiceIn.roboticMiddleware = "ACE_SmartSoft";
+	connections.navVelServiceIn.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.baseStateTask.minActFreq = 10.0;
 	connections.baseStateTask.maxActFreq = 40.0;
 	connections.baseStateTask.trigger = "PeriodicTimer";
@@ -93,6 +93,8 @@ SmartGazeboBaseServer::SmartGazeboBaseServer()
 	connections.pollForGazeboConnection.cpuAffinity = -1;
 	connections.localizationUpdateHandler.prescale = 1;
 	connections.velocityInpuHandler.prescale = 1;
+	
+	// initialize members of SeRoNetSDKComponentGeneratorExtension
 	
 	// initialize members of PlainOpcUaSmartGazeboBaseServerExtension
 	
@@ -207,6 +209,8 @@ void SmartGazeboBaseServer::init(int argc, char *argv[])
 		
 		// print out the actual parameters which are used to initialize the component
 		std::cout << " \nComponentDefinition Initial-Parameters:\n" << COMP->getGlobalState() << std::endl;
+		
+		// initializations of SeRoNetSDKComponentGeneratorExtension
 		
 		// initializations of PlainOpcUaSmartGazeboBaseServerExtension
 		
@@ -472,6 +476,8 @@ void SmartGazeboBaseServer::fini()
 		portFactory->second->destroy();
 	}
 	
+	// destruction of SeRoNetSDKComponentGeneratorExtension
+	
 	// destruction of PlainOpcUaSmartGazeboBaseServerExtension
 	
 }
@@ -627,6 +633,8 @@ void SmartGazeboBaseServer::loadParameter(int argc, char *argv[])
 		if(parameter.checkIfParameterExists("VelocityInpuHandler", "prescale")) {
 			parameter.getInteger("VelocityInpuHandler", "prescale", connections.velocityInpuHandler.prescale);
 		}
+		
+		// load parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// load parameters for PlainOpcUaSmartGazeboBaseServerExtension
 		

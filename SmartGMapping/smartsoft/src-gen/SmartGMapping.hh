@@ -29,6 +29,8 @@
 class SmartGMappingPortFactoryInterface;
 class SmartGMappingExtension;
 
+// includes for SeRoNetSDKComponentGeneratorExtension
+
 // includes for PlainOpcUaSmartGMappingExtension
 // include plain OPC UA device clients
 // include plain OPC UA status servers
@@ -115,6 +117,8 @@ public:
 	// define answer-ports
 	
 	// define request-handlers
+	
+	// definitions of SeRoNetSDKComponentGeneratorExtension
 	
 	// definitions of PlainOpcUaSmartGMappingExtension
 	
@@ -237,6 +241,8 @@ public:
 			long interval;
 			std::string roboticMiddleware;
 		} localizationUpdateServiceOut;
+		
+		// -- parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// -- parameters for PlainOpcUaSmartGMappingExtension
 		

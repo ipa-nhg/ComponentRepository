@@ -57,15 +57,15 @@ periodicActFreqHz 20.0
 
 [GoalEventServer]
 serviceName GoalEventServer
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [NavVelSendServer]
 serviceName NavVelSendServer
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [RobotBlockedEventServer]
 serviceName RobotBlockedEventServer
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 ##########################
 # client port parameter
@@ -76,7 +76,7 @@ serverName unknown
 serviceName unknown
 wiringName BaseStateClient
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [IRClient]
 initialConnect false
@@ -84,14 +84,14 @@ serverName unknown
 serviceName unknown
 wiringName IRClient
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [LaserClient]
 serverName unknown
 serviceName unknown
 wiringName LaserClient
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [LaserClient2]
 initialConnect false
@@ -99,7 +99,7 @@ serverName unknown
 serviceName unknown
 wiringName LaserClient2
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [NavVelSendClient]
 initialConnect false
@@ -107,7 +107,7 @@ serverName unknown
 serviceName unknown
 wiringName NavVelSendClient
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [PathNavigationGoalClient]
 initialConnect false
@@ -115,7 +115,7 @@ serverName unknown
 serviceName unknown
 wiringName PathNavigationGoalClient
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [PlannerClient]
 initialConnect false
@@ -123,7 +123,7 @@ serverName unknown
 serviceName unknown
 wiringName PlannerClient
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [TrackingClient]
 initialConnect false
@@ -131,10 +131,14 @@ serverName unknown
 serviceName unknown
 wiringName TrackingClient
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
+
+##########################
+## parameters of SeRoNetSDKComponentGeneratorExtension
 
 ##########################
 ## parameters of PlainOpcUaSmartCdlServerExtension
+
 
 
 #####################

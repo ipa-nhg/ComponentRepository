@@ -56,6 +56,10 @@ maxActFreqHz 0.0
 # client port parameter
 
 ##########################
+## parameters of SeRoNetSDKComponentGeneratorExtension
+
+##########################
 ## parameters of PlainOpcUaSmartRobotConsoleExtension
+
 
 

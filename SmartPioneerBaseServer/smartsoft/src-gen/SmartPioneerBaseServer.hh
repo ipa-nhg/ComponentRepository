@@ -29,6 +29,8 @@
 class SmartPioneerBaseServerPortFactoryInterface;
 class SmartPioneerBaseServerExtension;
 
+// includes for SeRoNetSDKComponentGeneratorExtension
+
 // includes for PlainOpcUaSmartPioneerBaseServerExtension
 // include plain OPC UA device clients
 // include plain OPC UA status servers
@@ -136,6 +138,8 @@ public:
 	
 	// define request-handlers
 	BaseStateQueryHandler *baseStateQueryHandler;
+	
+	// definitions of SeRoNetSDKComponentGeneratorExtension
 	
 	// definitions of PlainOpcUaSmartPioneerBaseServerExtension
 	
@@ -263,6 +267,8 @@ public:
 		} navVelIn;
 	
 		//--- client port parameter ---
+		
+		// -- parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// -- parameters for PlainOpcUaSmartPioneerBaseServerExtension
 		

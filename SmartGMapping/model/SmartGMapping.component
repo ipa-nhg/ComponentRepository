@@ -6,7 +6,10 @@ ComponentDefinition SmartGMapping
 			activates (active)
 		}
 	}
-	InputPort LaserServiceIn implements CommBasicObjects.LaserService { }
+	InputPort LaserServiceIn implements CommBasicObjects.LaserService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
 
 	Activity GMappingTask
 	{
@@ -15,8 +18,12 @@ ComponentDefinition SmartGMapping
 		OperationModeBinding CoordinationPort.active;
 	}
 	OutputPort LocalizationUpdateServiceOut implements CommNavigationObjects.LocalizationUpdateService realizedBy GMappingTask {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
 	}
 	OutputPort CurrGridMapPushServiceOut implements CommNavigationObjects.CurrGridMapPushService realizedBy GMappingTask {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
 	}
 	ComponentParameters SmartGMappingParams slave CoordinationPort;
 	

@@ -10,7 +10,8 @@ ComponentDefinition SmartJoystickServer {
 		}
 	}
 	OutputPort JoystickServcieOut implements CommBasicObjects.JoystickService realizedBy JoystickTask {
-		SupportedMiddleware default ACE_SmartSoft
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
 	}
 
 	ComponentParameters SmartJoystickServerParameters slave CoordinationPort;

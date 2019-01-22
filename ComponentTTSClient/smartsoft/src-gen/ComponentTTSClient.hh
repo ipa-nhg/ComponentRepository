@@ -29,6 +29,8 @@
 class ComponentTTSClientPortFactoryInterface;
 class ComponentTTSClientExtension;
 
+// includes for SeRoNetSDKComponentGeneratorExtension
+
 // includes for PlainOpcUaComponentTTSClientExtension
 // include plain OPC UA device clients
 // include plain OPC UA status servers
@@ -108,6 +110,8 @@ public:
 	// define answer-ports
 	
 	// define request-handlers
+	
+	// definitions of SeRoNetSDKComponentGeneratorExtension
 	
 	// definitions of PlainOpcUaComponentTTSClientExtension
 	
@@ -227,6 +231,8 @@ public:
 			long interval;
 			std::string roboticMiddleware;
 		} speechSendServiceOut;
+		
+		// -- parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// -- parameters for PlainOpcUaComponentTTSClientExtension
 		

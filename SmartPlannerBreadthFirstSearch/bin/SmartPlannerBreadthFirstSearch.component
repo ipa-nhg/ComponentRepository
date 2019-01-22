@@ -6,8 +6,14 @@ ComponentDefinition SmartPlannerBreadthFirstSearch {
 		}
 	}
 	
-	InputPort CurMapClient implements CommNavigationObjects.CurrGridMapPushService { }
-	InputPort BaseStateClient implements CommBasicObjects.BaseStateService { }
+	InputPort CurMapClient implements CommNavigationObjects.CurrGridMapPushService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	InputPort BaseStateClient implements CommBasicObjects.BaseStateService { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
 	
 	Activity PlannerTask {
 		InputPortLink CurMapClient {
@@ -25,8 +31,14 @@ ComponentDefinition SmartPlannerBreadthFirstSearch {
 		OperationModeBinding CoordinationPort.pathplanning;
 	}
 	
-	OutputPort PlannerGoalServer implements CommNavigationObjects.PlannerGoalService realizedBy PlannerTask { }
-	OutputPort PlannerEventServer implements CommNavigationObjects.PlannerEventService realizedBy PlannerTask { }
+	OutputPort PlannerGoalServer implements CommNavigationObjects.PlannerGoalService realizedBy PlannerTask { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
+	OutputPort PlannerEventServer implements CommNavigationObjects.PlannerEventService realizedBy PlannerTask { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
+	}
 	
 	ComponentParameters SmartPlannerParams slave CoordinationPort;
 }

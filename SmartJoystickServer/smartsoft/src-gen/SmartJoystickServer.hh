@@ -29,6 +29,8 @@
 class SmartJoystickServerPortFactoryInterface;
 class SmartJoystickServerExtension;
 
+// includes for SeRoNetSDKComponentGeneratorExtension
+
 // includes for PlainOpcUaSmartJoystickServerExtension
 // include plain OPC UA device clients
 // include plain OPC UA status servers
@@ -105,6 +107,8 @@ public:
 	// define answer-ports
 	
 	// define request-handlers
+	
+	// definitions of SeRoNetSDKComponentGeneratorExtension
 	
 	// definitions of PlainOpcUaSmartJoystickServerExtension
 	
@@ -200,6 +204,8 @@ public:
 		} joystickServcieOut;
 	
 		//--- client port parameter ---
+		
+		// -- parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// -- parameters for PlainOpcUaSmartJoystickServerExtension
 		

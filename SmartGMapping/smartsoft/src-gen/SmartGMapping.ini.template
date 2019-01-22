@@ -58,7 +58,7 @@ prescale 1
 
 [CurrGridMapPushServiceOut]
 serviceName CurrGridMapPushServiceOut
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 ##########################
 # client port parameter
@@ -68,7 +68,7 @@ serverName unknown
 serviceName unknown
 wiringName LaserServiceIn
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 [LocalizationUpdateServiceOut]
 initialConnect false
@@ -76,10 +76,14 @@ serverName unknown
 serviceName unknown
 wiringName LocalizationUpdateServiceOut
 interval 1
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
+
+##########################
+## parameters of SeRoNetSDKComponentGeneratorExtension
 
 ##########################
 ## parameters of PlainOpcUaSmartGMappingExtension
+
 
 
 #####################

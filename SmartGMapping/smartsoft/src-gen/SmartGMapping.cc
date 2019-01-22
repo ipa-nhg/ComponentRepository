@@ -52,18 +52,18 @@ SmartGMapping::SmartGMapping()
 	connections.component.useLogger = false;
 	
 	connections.currGridMapPushServiceOut.serviceName = "CurrGridMapPushServiceOut";
-	connections.currGridMapPushServiceOut.roboticMiddleware = "ACE_SmartSoft";
+	connections.currGridMapPushServiceOut.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.laserServiceIn.wiringName = "LaserServiceIn";
 	connections.laserServiceIn.serverName = "unknown";
 	connections.laserServiceIn.serviceName = "unknown";
 	connections.laserServiceIn.interval = 1;
-	connections.laserServiceIn.roboticMiddleware = "ACE_SmartSoft";
+	connections.laserServiceIn.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.localizationUpdateServiceOut.initialConnect = false;
 	connections.localizationUpdateServiceOut.wiringName = "LocalizationUpdateServiceOut";
 	connections.localizationUpdateServiceOut.serverName = "unknown";
 	connections.localizationUpdateServiceOut.serviceName = "unknown";
 	connections.localizationUpdateServiceOut.interval = 1;
-	connections.localizationUpdateServiceOut.roboticMiddleware = "ACE_SmartSoft";
+	connections.localizationUpdateServiceOut.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.gMappingTask.minActFreq = 0.0;
 	connections.gMappingTask.maxActFreq = 0.0;
 	connections.gMappingTask.trigger = "DataTriggered";
@@ -73,6 +73,8 @@ SmartGMapping::SmartGMapping()
 	connections.gMappingTask.scheduler = "DEFAULT";
 	connections.gMappingTask.priority = -1;
 	connections.gMappingTask.cpuAffinity = -1;
+	
+	// initialize members of SeRoNetSDKComponentGeneratorExtension
 	
 	// initialize members of PlainOpcUaSmartGMappingExtension
 	
@@ -192,6 +194,8 @@ void SmartGMapping::init(int argc, char *argv[])
 		
 		// print out the actual parameters which are used to initialize the component
 		std::cout << " \nComponentDefinition Initial-Parameters:\n" << COMP->getGlobalState() << std::endl;
+		
+		// initializations of SeRoNetSDKComponentGeneratorExtension
 		
 		// initializations of PlainOpcUaSmartGMappingExtension
 		
@@ -406,6 +410,8 @@ void SmartGMapping::fini()
 		portFactory->second->destroy();
 	}
 	
+	// destruction of SeRoNetSDKComponentGeneratorExtension
+	
 	// destruction of PlainOpcUaSmartGMappingExtension
 	
 }
@@ -522,6 +528,8 @@ void SmartGMapping::loadParameter(int argc, char *argv[])
 		if(parameter.checkIfParameterExists("GMappingTask", "cpuAffinity")) {
 			parameter.getInteger("GMappingTask", "cpuAffinity", connections.gMappingTask.cpuAffinity);
 		}
+		
+		// load parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// load parameters for PlainOpcUaSmartGMappingExtension
 		

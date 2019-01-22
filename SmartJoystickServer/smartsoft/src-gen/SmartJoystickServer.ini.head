@@ -45,12 +45,16 @@ initialComponentMode Neutral
 
 [JoystickServcieOut]
 serviceName JoystickServcieOut
-roboticMiddleware ACE_SmartSoft
+roboticMiddleware OpcUa_SeRoNet
 
 ##########################
 # client port parameter
 
 ##########################
+## parameters of SeRoNetSDKComponentGeneratorExtension
+
+##########################
 ## parameters of PlainOpcUaSmartJoystickServerExtension
+
 
 

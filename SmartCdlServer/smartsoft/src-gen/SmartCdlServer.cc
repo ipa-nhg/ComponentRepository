@@ -78,58 +78,58 @@ SmartCdlServer::SmartCdlServer()
 	connections.component.useLogger = false;
 	
 	connections.goalEventServer.serviceName = "GoalEventServer";
-	connections.goalEventServer.roboticMiddleware = "ACE_SmartSoft";
+	connections.goalEventServer.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.navVelSendServer.serviceName = "NavVelSendServer";
-	connections.navVelSendServer.roboticMiddleware = "ACE_SmartSoft";
+	connections.navVelSendServer.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.robotBlockedEventServer.serviceName = "RobotBlockedEventServer";
-	connections.robotBlockedEventServer.roboticMiddleware = "ACE_SmartSoft";
+	connections.robotBlockedEventServer.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.baseStateClient.initialConnect = false;
 	connections.baseStateClient.wiringName = "BaseStateClient";
 	connections.baseStateClient.serverName = "unknown";
 	connections.baseStateClient.serviceName = "unknown";
 	connections.baseStateClient.interval = 1;
-	connections.baseStateClient.roboticMiddleware = "ACE_SmartSoft";
+	connections.baseStateClient.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.iRClient.initialConnect = false;
 	connections.iRClient.wiringName = "IRClient";
 	connections.iRClient.serverName = "unknown";
 	connections.iRClient.serviceName = "unknown";
 	connections.iRClient.interval = 1;
-	connections.iRClient.roboticMiddleware = "ACE_SmartSoft";
+	connections.iRClient.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.laserClient.wiringName = "LaserClient";
 	connections.laserClient.serverName = "unknown";
 	connections.laserClient.serviceName = "unknown";
 	connections.laserClient.interval = 1;
-	connections.laserClient.roboticMiddleware = "ACE_SmartSoft";
+	connections.laserClient.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.laserClient2.initialConnect = false;
 	connections.laserClient2.wiringName = "LaserClient2";
 	connections.laserClient2.serverName = "unknown";
 	connections.laserClient2.serviceName = "unknown";
 	connections.laserClient2.interval = 1;
-	connections.laserClient2.roboticMiddleware = "ACE_SmartSoft";
+	connections.laserClient2.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.navVelSendClient.initialConnect = false;
 	connections.navVelSendClient.wiringName = "NavVelSendClient";
 	connections.navVelSendClient.serverName = "unknown";
 	connections.navVelSendClient.serviceName = "unknown";
 	connections.navVelSendClient.interval = 1;
-	connections.navVelSendClient.roboticMiddleware = "ACE_SmartSoft";
+	connections.navVelSendClient.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.pathNavigationGoalClient.initialConnect = false;
 	connections.pathNavigationGoalClient.wiringName = "PathNavigationGoalClient";
 	connections.pathNavigationGoalClient.serverName = "unknown";
 	connections.pathNavigationGoalClient.serviceName = "unknown";
 	connections.pathNavigationGoalClient.interval = 1;
-	connections.pathNavigationGoalClient.roboticMiddleware = "ACE_SmartSoft";
+	connections.pathNavigationGoalClient.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.plannerClient.initialConnect = false;
 	connections.plannerClient.wiringName = "PlannerClient";
 	connections.plannerClient.serverName = "unknown";
 	connections.plannerClient.serviceName = "unknown";
 	connections.plannerClient.interval = 1;
-	connections.plannerClient.roboticMiddleware = "ACE_SmartSoft";
+	connections.plannerClient.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.trackingClient.initialConnect = false;
 	connections.trackingClient.wiringName = "TrackingClient";
 	connections.trackingClient.serverName = "unknown";
 	connections.trackingClient.serviceName = "unknown";
 	connections.trackingClient.interval = 1;
-	connections.trackingClient.roboticMiddleware = "ACE_SmartSoft";
+	connections.trackingClient.roboticMiddleware = "OpcUa_SeRoNet";
 	connections.cdlTask.minActFreq = 5.0;
 	connections.cdlTask.maxActFreq = 40.0;
 	connections.cdlTask.trigger = "PeriodicTimer";
@@ -138,6 +138,8 @@ SmartCdlServer::SmartCdlServer()
 	connections.cdlTask.scheduler = "DEFAULT";
 	connections.cdlTask.priority = -1;
 	connections.cdlTask.cpuAffinity = -1;
+	
+	// initialize members of SeRoNetSDKComponentGeneratorExtension
 	
 	// initialize members of PlainOpcUaSmartCdlServerExtension
 	
@@ -378,6 +380,8 @@ void SmartCdlServer::init(int argc, char *argv[])
 		
 		// print out the actual parameters which are used to initialize the component
 		std::cout << " \nComponentDefinition Initial-Parameters:\n" << COMP->getGlobalState() << std::endl;
+		
+		// initializations of SeRoNetSDKComponentGeneratorExtension
 		
 		// initializations of PlainOpcUaSmartCdlServerExtension
 		
@@ -682,6 +686,8 @@ void SmartCdlServer::fini()
 		portFactory->second->destroy();
 	}
 	
+	// destruction of SeRoNetSDKComponentGeneratorExtension
+	
 	// destruction of PlainOpcUaSmartCdlServerExtension
 	
 }
@@ -862,6 +868,8 @@ void SmartCdlServer::loadParameter(int argc, char *argv[])
 		if(parameter.checkIfParameterExists("CdlTask", "cpuAffinity")) {
 			parameter.getInteger("CdlTask", "cpuAffinity", connections.cdlTask.cpuAffinity);
 		}
+		
+		// load parameters for SeRoNetSDKComponentGeneratorExtension
 		
 		// load parameters for PlainOpcUaSmartCdlServerExtension
 		

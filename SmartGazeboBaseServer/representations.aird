@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ComponentDefinition="http://www.ecore.org/component/ComponentDefinition" xmlns:ComponentParameter="http://www.ecore.org/component/ComponentParameter" xmlns:CoordinationExtension="http://www.ecore.org/component/CoordinationExtension" xmlns:PerformanceExtension="http://www.ecore.org/component/PerformanceExtension" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ComponentDefinition="http://www.ecore.org/component/ComponentDefinition" xmlns:ComponentParameter="http://www.ecore.org/component/ComponentParameter" xmlns:CoordinationExtension="http://www.ecore.org/component/CoordinationExtension" xmlns:PerformanceExtension="http://www.ecore.org/component/PerformanceExtension" xmlns:SeronetExtension="http://www.ecore.org/component/SeronetExtension" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis xmi:id="_Z2FmsA_5EeibRowsk6YwOg" selectedViews="_Z6JAQA_5EeibRowsk6YwOg" version="12.1.0.201708031200">
     <semanticResources>model/SmartGazeboBaseServer.component</semanticResources>
     <semanticResources>model/SmartGazeboBaseServer.componentParameters</semanticResources>
@@ -12,6 +12,8 @@
     <semanticResources>platform:/resource/CommNavigationObjects/model/CommNavigationObjects.services</semanticResources>
     <semanticResources>platform:/resource/CommBasicObjects/model/CommBasicObjects.types</semanticResources>
     <semanticResources>platform:/resource/CommNavigationObjects/model/CommNavigationObjects.types</semanticResources>
+    <semanticResources>platform:/plugin/org.xtext.service.parameterDefinition/defaultParameterLib/defaultParameterLib.parameters</semanticResources>
+    <semanticResources>platform:/plugin/org.xtext.base.stateMachine/componentLifecycle/ComponentLifecycle.automaton</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_Z6JAQA_5EeibRowsk6YwOg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_Z63ZAA_5EeibRowsk6YwOg" name="SmartGazeboBaseServer" repPath="#_Z6Ze8A_5EeibRowsk6YwOg">
@@ -139,6 +141,17 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_8eQ8gRF2Eei5neAD8iW_aw" fontName="Ubuntu"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8eQ8ghF2Eei5neAD8iW_aw"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_uqJFsB5OEemoJNQZvmWA6Q" type="3012" element="_upflcB5OEemoJNQZvmWA6Q">
+              <children xmi:type="notation:Node" xmi:id="_uqJswB5OEemoJNQZvmWA6Q" visible="false" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_uqJswR5OEemoJNQZvmWA6Q" x="21" y="1"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_uqKT0B5OEemoJNQZvmWA6Q" type="3005" element="_upm6MB5OEemoJNQZvmWA6Q">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_uqKT0R5OEemoJNQZvmWA6Q" fontName="Ubuntu"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uqKT0h5OEemoJNQZvmWA6Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_uqJFsR5OEemoJNQZvmWA6Q" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uqJFsh5OEemoJNQZvmWA6Q" x="-12" y="5" width="20" height="22"/>
+            </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_8eHykRF2Eei5neAD8iW_aw" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8eHykhF2Eei5neAD8iW_aw" x="-22" y="259" width="30" height="30"/>
           </children>
@@ -149,6 +162,17 @@
             <children xmi:type="notation:Node" xmi:id="_JACkkBGDEeiH0MvBCNHUuA" type="3014" element="_I-zOcBGDEeiH0MvBCNHUuA">
               <styles xmi:type="notation:ShapeStyle" xmi:id="_JACkkRGDEeiH0MvBCNHUuA" fontName="Ubuntu"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JACkkhGDEeiH0MvBCNHUuA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_uqK64B5OEemoJNQZvmWA6Q" type="3012" element="_upqkkB5OEemoJNQZvmWA6Q">
+              <children xmi:type="notation:Node" xmi:id="_uqK64x5OEemoJNQZvmWA6Q" visible="false" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_uqK65B5OEemoJNQZvmWA6Q" x="21" y="1"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_uqLh8B5OEemoJNQZvmWA6Q" type="3005" element="_uprLoB5OEemoJNQZvmWA6Q">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_uqLh8R5OEemoJNQZvmWA6Q" fontName="Ubuntu"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uqLh8h5OEemoJNQZvmWA6Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_uqK64R5OEemoJNQZvmWA6Q" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uqK64h5OEemoJNQZvmWA6Q" x="-12" y="1" width="20" height="22"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_JAAvYRGDEeiH0MvBCNHUuA" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JAAvYhGDEeiH0MvBCNHUuA" x="449" y="239" width="30" height="30"/>
@@ -161,6 +185,17 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_EoE4MYUmEeijE_CG6a928A" fontName="Ubuntu"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EoE4MoUmEeijE_CG6a928A"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_uqMwEB5OEemoJNQZvmWA6Q" type="3012" element="_upoIUB5OEemoJNQZvmWA6Q">
+              <children xmi:type="notation:Node" xmi:id="_uqNXIB5OEemoJNQZvmWA6Q" visible="false" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_uqNXIR5OEemoJNQZvmWA6Q" x="21" y="1"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_uqOlQB5OEemoJNQZvmWA6Q" type="3005" element="_upovYB5OEemoJNQZvmWA6Q">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_uqOlQR5OEemoJNQZvmWA6Q" fontName="Ubuntu"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uqOlQh5OEemoJNQZvmWA6Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_uqMwER5OEemoJNQZvmWA6Q" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uqMwEh5OEemoJNQZvmWA6Q" x="-12" y="3" width="20" height="22"/>
+            </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_En9jcYUmEeijE_CG6a928A" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_En9jcoUmEeijE_CG6a928A" x="-22" y="57" width="30" height="30"/>
           </children>
@@ -171,6 +206,17 @@
             <children xmi:type="notation:Node" xmi:id="_EoE4M4UmEeijE_CG6a928A" type="3014" element="_Ek0v4YUmEeijE_CG6a928A">
               <styles xmi:type="notation:ShapeStyle" xmi:id="_EoE4NIUmEeijE_CG6a928A" fontName="Ubuntu"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EoE4NYUmEeijE_CG6a928A"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_uqPMUB5OEemoJNQZvmWA6Q" type="3012" element="_upsZwB5OEemoJNQZvmWA6Q">
+              <children xmi:type="notation:Node" xmi:id="_uqQacB5OEemoJNQZvmWA6Q" visible="false" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_uqQacR5OEemoJNQZvmWA6Q" x="21" y="1"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_uqQach5OEemoJNQZvmWA6Q" type="3005" element="_uptA0B5OEemoJNQZvmWA6Q">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_uqQacx5OEemoJNQZvmWA6Q" fontName="Ubuntu"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uqQadB5OEemoJNQZvmWA6Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_uqPMUR5OEemoJNQZvmWA6Q" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uqPMUh5OEemoJNQZvmWA6Q" x="-12" width="20" height="22"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_En-Kg4UmEeijE_CG6a928A" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_En-KhIUmEeijE_CG6a928A" x="449" y="96" width="30" height="30"/>
@@ -345,6 +391,22 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cW2nEIkKEeit4-fWZqJ6Ew" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cW2nEYkKEeit4-fWZqJ6Ew" id="(0.6115702479338843,0.918918918918919)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_t-oqkB5OEemoJNQZvmWA6Q" type="4001" element="_t-jyEB5OEemoJNQZvmWA6Q" source="_En__sIUmEeijE_CG6a928A" target="_En_YoIUmEeijE_CG6a928A">
+          <children xmi:type="notation:Node" xmi:id="_t-p4sB5OEemoJNQZvmWA6Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t-p4sR5OEemoJNQZvmWA6Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_t-rG0B5OEemoJNQZvmWA6Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t-rG0R5OEemoJNQZvmWA6Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_t-rG0h5OEemoJNQZvmWA6Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t-rG0x5OEemoJNQZvmWA6Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_t-oqkR5OEemoJNQZvmWA6Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_t-oqkh5OEemoJNQZvmWA6Q" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_t-oqkx5OEemoJNQZvmWA6Q" points="[-15, -6, 456, 179]$[-456, -180, 15, 5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t-uxMB5OEemoJNQZvmWA6Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t-uxMR5OEemoJNQZvmWA6Q" id="(0.5,0.5)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_Z608xA_5EeibRowsk6YwOg" name="SmartGazeboBaseServer" tooltipText="ComponentDefinition">
@@ -353,48 +415,84 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_8XEvYBF2Eei5neAD8iW_aw" name="NavVelServiceIn" tooltipText="InputPort" outgoingEdges="_JZKv4IarEei13fxkSw2cdQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentDefinition:InputPort" href="model/SmartGazeboBaseServer.component#//@component/@elements.1"/>
         <semanticElements xmi:type="ComponentDefinition:InputPort" href="model/SmartGazeboBaseServer.component#//@component/@elements.1"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_upflcB5OEemoJNQZvmWA6Q" name="OpcUa_SeRoNet" tooltipText="SeRoNet Port" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="SeronetExtension:SupportedMiddleware" href="model/SmartGazeboBaseServer.component#//@component/@elements.1/@extensions.0"/>
+          <semanticElements xmi:type="SeronetExtension:SupportedMiddleware" href="model/SmartGazeboBaseServer.component#//@component/@elements.1/@extensions.0"/>
+          <graphicalFilters xmi:type="diagram:HideLabelFilter" xmi:id="_upnhQB5OEemoJNQZvmWA6Q"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_upm6MB5OEemoJNQZvmWA6Q" showIcon="false" hideLabelByDefault="true" workspacePath="/org.sirius.component.design/icons/SeRoNetIcon.png">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='InputPortNodeImport']/@borderedNodeMappings[name='InputMiddlweareExtension']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='InputPortNodeImport']/@borderedNodeMappings[name='InputMiddlweareExtension']"/>
+        </ownedBorderedNodes>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" xmi:id="_8XFWcBF2Eei5neAD8iW_aw" showIcon="false" id="input">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='InputPortNode']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='InputPortNode']"/>
+        <actualMapping xmi:type="description_1:NodeMappingImport" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='InputPortNodeImport']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_I-ynYBGDEeiH0MvBCNHUuA" name="LaserServiceOut" tooltipText="OutputPort" incomingEdges="_7qnpMIDsEeihHfvfStAAeQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentDefinition:OutputPort" href="model/SmartGazeboBaseServer.component#//@component/@elements.9"/>
         <semanticElements xmi:type="ComponentDefinition:OutputPort" href="model/SmartGazeboBaseServer.component#//@component/@elements.9"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_upqkkB5OEemoJNQZvmWA6Q" name="OpcUa_SeRoNet" tooltipText="SeRoNet Port" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="SeronetExtension:SupportedMiddleware" href="model/SmartGazeboBaseServer.component#//@component/@elements.9/@extensions.0"/>
+          <semanticElements xmi:type="SeronetExtension:SupportedMiddleware" href="model/SmartGazeboBaseServer.component#//@component/@elements.9/@extensions.0"/>
+          <graphicalFilters xmi:type="diagram:HideLabelFilter" xmi:id="_uprysB5OEemoJNQZvmWA6Q"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_uprLoB5OEemoJNQZvmWA6Q" showIcon="false" hideLabelByDefault="true" workspacePath="/org.sirius.component.design/icons/SeRoNetIcon.png">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']/@borderedNodeMappings[name='OutputMiddlweareExtension']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']/@borderedNodeMappings[name='OutputMiddlweareExtension']"/>
+        </ownedBorderedNodes>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" xmi:id="_I-zOcBGDEeiH0MvBCNHUuA" showIcon="false" id="output">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='OutputPortNode']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='OutputPortNode']"/>
+        <actualMapping xmi:type="description_1:NodeMappingImport" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_EkzhwIUmEeijE_CG6a928A" name="LocalizationUpdateServiceIn" tooltipText="InputPort" outgoingEdges="_JZI6sIarEei13fxkSw2cdQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentDefinition:InputPort" href="model/SmartGazeboBaseServer.component#//@component/@elements.2"/>
         <semanticElements xmi:type="ComponentDefinition:InputPort" href="model/SmartGazeboBaseServer.component#//@component/@elements.2"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_upoIUB5OEemoJNQZvmWA6Q" name="OpcUa_SeRoNet" tooltipText="SeRoNet Port" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="SeronetExtension:SupportedMiddleware" href="model/SmartGazeboBaseServer.component#//@component/@elements.2/@extensions.0"/>
+          <semanticElements xmi:type="SeronetExtension:SupportedMiddleware" href="model/SmartGazeboBaseServer.component#//@component/@elements.2/@extensions.0"/>
+          <graphicalFilters xmi:type="diagram:HideLabelFilter" xmi:id="_uppWcB5OEemoJNQZvmWA6Q"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_upovYB5OEemoJNQZvmWA6Q" showIcon="false" hideLabelByDefault="true" workspacePath="/org.sirius.component.design/icons/SeRoNetIcon.png">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='InputPortNodeImport']/@borderedNodeMappings[name='InputMiddlweareExtension']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='InputPortNodeImport']/@borderedNodeMappings[name='InputMiddlweareExtension']"/>
+        </ownedBorderedNodes>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" xmi:id="_EkzhwYUmEeijE_CG6a928A" showIcon="false" id="input">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='InputPortNode']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='InputPortNode']"/>
+        <actualMapping xmi:type="description_1:NodeMappingImport" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='InputPortNodeImport']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Ek0v4IUmEeijE_CG6a928A" name="BaseStateServiceOut" tooltipText="OutputPort" incomingEdges="_EnrPkIUmEeijE_CG6a928A" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentDefinition:OutputPort" href="model/SmartGazeboBaseServer.component#//@component/@elements.10"/>
         <semanticElements xmi:type="ComponentDefinition:OutputPort" href="model/SmartGazeboBaseServer.component#//@component/@elements.10"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_upsZwB5OEemoJNQZvmWA6Q" name="OpcUa_SeRoNet" tooltipText="SeRoNet Port" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="SeronetExtension:SupportedMiddleware" href="model/SmartGazeboBaseServer.component#//@component/@elements.10/@extensions.0"/>
+          <semanticElements xmi:type="SeronetExtension:SupportedMiddleware" href="model/SmartGazeboBaseServer.component#//@component/@elements.10/@extensions.0"/>
+          <graphicalFilters xmi:type="diagram:HideLabelFilter" xmi:id="_uptA0R5OEemoJNQZvmWA6Q"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_uptA0B5OEemoJNQZvmWA6Q" showIcon="false" hideLabelByDefault="true" workspacePath="/org.sirius.component.design/icons/SeRoNetIcon.png">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']/@borderedNodeMappings[name='OutputMiddlweareExtension']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']/@borderedNodeMappings[name='OutputMiddlweareExtension']"/>
+        </ownedBorderedNodes>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" xmi:id="_Ek0v4YUmEeijE_CG6a928A" showIcon="false" id="output">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='OutputPortNode']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='OutputPortNode']"/>
+        <actualMapping xmi:type="description_1:NodeMappingImport" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']/@borderedNodeMappings[name='OutputPortNodeImport']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Ek1W8IUmEeijE_CG6a928A" name="BaseSatateQueryAnsw" tooltipText="AnswerPort" outgoingEdges="_En21wIUmEeijE_CG6a928A" width="3" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Ek1W8IUmEeijE_CG6a928A" name="BaseSatateQueryAnsw" tooltipText="AnswerPort" outgoingEdges="_En21wIUmEeijE_CG6a928A" incomingEdges="_t-jyEB5OEemoJNQZvmWA6Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentDefinition:AnswerPort" href="model/SmartGazeboBaseServer.component#//@component/@elements.3"/>
         <semanticElements xmi:type="ComponentDefinition:AnswerPort" href="model/SmartGazeboBaseServer.component#//@component/@elements.3"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -405,7 +503,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@borderedNodeMappings[name='AnswerPortNode']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Ek1-AIUmEeijE_CG6a928A" name="CoordinationPort" tooltipText="CoordinationSlavePort" outgoingEdges="_cV5k0IkKEeit4-fWZqJ6Ew" incomingEdges="_9arp0IkJEei1yenFsxVPug" width="-1" height="-1" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Ek1-AIUmEeijE_CG6a928A" name="CoordinationPort" tooltipText="CoordinationSlavePort" outgoingEdges="_cV5k0IkKEeit4-fWZqJ6Ew _t-jyEB5OEemoJNQZvmWA6Q" incomingEdges="_9arp0IkJEei1yenFsxVPug" width="-1" height="-1" resizeKind="NSEW">
         <target xmi:type="CoordinationExtension:CoordinationSlavePort" href="model/SmartGazeboBaseServer.component#//@component/@elements.0"/>
         <semanticElements xmi:type="CoordinationExtension:CoordinationSlavePort" href="model/SmartGazeboBaseServer.component#//@component/@elements.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -423,7 +521,7 @@
         <labelFormat>bold</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@containerMappings[name='ComponentContainer']"/>
+      <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']/@containerMappings[name='ComponentContainerImport']"/>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_7orIcYDsEeihHfvfStAAeQ" name="LaserTask" tooltipText="Activity" outgoingEdges="_7qnpMIDsEeihHfvfStAAeQ">
         <target xmi:type="ComponentDefinition:Activity" href="model/SmartGazeboBaseServer.component#//@component/@elements.7"/>
         <semanticElements xmi:type="ComponentDefinition:Activity" href="model/SmartGazeboBaseServer.component#//@component/@elements.7"/>
@@ -631,9 +729,19 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@edgeMappings[name='CoordinationSlaveEdge']"/>
     </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_t-jyEB5OEemoJNQZvmWA6Q" sourceNode="_Ek1-AIUmEeijE_CG6a928A" targetNode="_Ek1W8IUmEeijE_CG6a928A">
+      <target xmi:type="CoordinationExtension:CommunicationServiceUsageRealization" href="model/SmartGazeboBaseServer.component#//@component/@elements.0/@elements.0"/>
+      <semanticElements xmi:type="CoordinationExtension:CommunicationServiceUsageRealization" href="model/SmartGazeboBaseServer.component#//@component/@elements.0/@elements.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_t-lAMB5OEemoJNQZvmWA6Q" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@edgeMappings[name='CommunicationServiceUsageRealizationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_t-lAMR5OEemoJNQZvmWA6Q"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer/@edgeMappings[name='CommunicationServiceUsageRealizationEdge']"/>
+    </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_Z608xw_5EeibRowsk6YwOg"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.sirius.component.design/description/component.odesign#//@ownedViewpoints[name='ComponentDefinitionViewpoint']/@ownedRepresentations[name='ComponentDefinitionDiagram']/@additionalLayers[name='SeRoNet']"/>
     <target xmi:type="ComponentDefinition:ComponentDefModel" href="model/SmartGazeboBaseServer.component#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

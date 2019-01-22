@@ -4,6 +4,8 @@ ComponentDefinition SmartJoystickNavigation {
 	}
 	
 	InputPort JoystickServiceIn implements CommBasicObjects.JoystickService {
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
 	}
 
 	Activity JoystickNavTask
@@ -12,6 +14,8 @@ ComponentDefinition SmartJoystickNavigation {
 		DefaultTrigger InputPortTrigger JoystickServiceIn;
 	}
 	OutputPort NavVelServiceOut implements CommNavigationObjects.NavigationVelocityService realizedBy JoystickNavTask { 
+		SupportedMiddleware default OpcUa_SeRoNet
+		SupportedMiddleware ACE_SmartSoft
 	}
 
 	ComponentParameters SmartJoystickNavigationParameters slave CoordinationPort;

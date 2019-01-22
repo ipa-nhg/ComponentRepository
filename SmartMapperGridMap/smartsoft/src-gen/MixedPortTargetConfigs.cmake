@@ -1,3 +1,8 @@
+# target configurations for SeRoNetSDKComponentGeneratorExtension
+IF(SeRoNetSDK_FOUND)
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} SeRoNetSDK::SeRoNetSDK)
+ENDIF(SeRoNetSDK_FOUND)
+
 # target configurations for PlainOpcUaSmartMapperGridMapExtension
 IF(open62541_FOUND)
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} open62541)
