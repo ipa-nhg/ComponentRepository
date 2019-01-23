@@ -1,0 +1,9 @@
+ComponentDefinition ComponentPushServer logo "/ComponentPushServer/model/logo.png"
+{
+	Activity PushActivity
+	{
+		DefaultTrigger PeriodicTimer 10.0 Hz
+	}
+	OutputPort JoystickServiceOut implements CommBasicObjects.JoystickService realizedBy PushActivity {
+		SupportedMiddleware OpcUa_SeRoNet }
+}

@@ -1,0 +1,11 @@
+ComponentDefinition ComponentPushClient logo "/ComponentPushClient/model/logo.png"
+{
+
+InputPort JoystickServiceIn implements CommBasicObjects.JoystickService {
+		SupportedMiddleware OpcUa_SeRoNet }
+	Activity JoystickActivity
+	{
+		InputPortLink JoystickServiceIn { oversamplingOk undersamplingOk }
+		DefaultTrigger InputPortTrigger JoystickServiceIn
+	}
+}
